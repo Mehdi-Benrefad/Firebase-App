@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		4F9BF63126722EB00071E5B6 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF63026722EB00071E5B6 /* EditViewController.swift */; };
 		4F9BF63326724BE90071E5B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF63226724BE90071E5B6 /* LoginViewController.swift */; };
 		4F9BF63526725B470071E5B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */; };
+		4F9BF637267276EC0071E5B6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF636267276EB0071E5B6 /* Person.swift */; };
 		4FC80B7126711A4A00F09016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7026711A4A00F09016 /* AppDelegate.swift */; };
 		4FC80B7326711A4A00F09016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7226711A4A00F09016 /* SceneDelegate.swift */; };
 		4FC80B7526711A4A00F09016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7426711A4A00F09016 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		4F9BF63026722EB00071E5B6 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		4F9BF63226724BE90071E5B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F9BF636267276EB0071E5B6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4FC80B6D26711A4A00F09016 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC80B7026711A4A00F09016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC80B7226711A4A00F09016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				4FC80B7026711A4A00F09016 /* AppDelegate.swift */,
 				4FC80B7226711A4A00F09016 /* SceneDelegate.swift */,
 				4F9BF63226724BE90071E5B6 /* LoginViewController.swift */,
+				4F9BF636267276EB0071E5B6 /* Person.swift */,
 				4FC80B7426711A4A00F09016 /* ViewController.swift */,
 				4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */,
 				4FC80B7626711A4A00F09016 /* Main.storyboard */,
@@ -103,7 +106,6 @@
 				DB1B918424DC9A022B9583C7 /* Pods-FirebaseApp.debug.xcconfig */,
 				7D5241B4317EF5F7B08F511A /* Pods-FirebaseApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,6 +231,7 @@
 				4F9BF63126722EB00071E5B6 /* EditViewController.swift in Sources */,
 				4FC80B7126711A4A00F09016 /* AppDelegate.swift in Sources */,
 				4FC80B7B26711A4A00F09016 /* FirebaseApp.xcdatamodeld in Sources */,
+				4F9BF637267276EC0071E5B6 /* Person.swift in Sources */,
 				4FC80B7326711A4A00F09016 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
