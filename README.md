@@ -1,4 +1,5 @@
 # Firebase-App
 
-<h3>Create a Firebase Project<h3>
+# 1- Create a Firebase Project
+  
   <p> Console => New Project => <p>
