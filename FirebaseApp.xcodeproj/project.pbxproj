@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F9BF62F26722B3D0071E5B6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */; };
+		4F9BF63126722EB00071E5B6 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF63026722EB00071E5B6 /* EditViewController.swift */; };
 		4FC80B7126711A4A00F09016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7026711A4A00F09016 /* AppDelegate.swift */; };
 		4FC80B7326711A4A00F09016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7226711A4A00F09016 /* SceneDelegate.swift */; };
 		4FC80B7526711A4A00F09016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7426711A4A00F09016 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4F9BF63026722EB00071E5B6 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		4FC80B6D26711A4A00F09016 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC80B7026711A4A00F09016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC80B7226711A4A00F09016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +65,11 @@
 				4FC80B7026711A4A00F09016 /* AppDelegate.swift */,
 				4FC80B7226711A4A00F09016 /* SceneDelegate.swift */,
 				4FC80B7426711A4A00F09016 /* ViewController.swift */,
+				4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */,
 				4FC80B7626711A4A00F09016 /* Main.storyboard */,
 				4FC80B7C26711A5900F09016 /* Assets.xcassets */,
 				4FC80B7E26711A5900F09016 /* LaunchScreen.storyboard */,
+				4F9BF63026722EB00071E5B6 /* EditViewController.swift */,
 				4FC80B8126711A5900F09016 /* Info.plist */,
 				4FC80B7926711A4A00F09016 /* FirebaseApp.xcdatamodeld */,
 			);
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9BF62F26722B3D0071E5B6 /* AddViewController.swift in Sources */,
 				4FC80B7526711A4A00F09016 /* ViewController.swift in Sources */,
+				4F9BF63126722EB00071E5B6 /* EditViewController.swift in Sources */,
 				4FC80B7126711A4A00F09016 /* AppDelegate.swift in Sources */,
 				4FC80B7B26711A4A00F09016 /* FirebaseApp.xcdatamodeld in Sources */,
 				4FC80B7326711A4A00F09016 /* SceneDelegate.swift in Sources */,
