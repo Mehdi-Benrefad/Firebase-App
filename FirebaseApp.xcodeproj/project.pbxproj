@@ -10,6 +10,7 @@
 		4F9BF62F26722B3D0071E5B6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */; };
 		4F9BF63126722EB00071E5B6 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF63026722EB00071E5B6 /* EditViewController.swift */; };
 		4F9BF63326724BE90071E5B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BF63226724BE90071E5B6 /* LoginViewController.swift */; };
+		4F9BF63526725B470071E5B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */; };
 		4FC80B7126711A4A00F09016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7026711A4A00F09016 /* AppDelegate.swift */; };
 		4FC80B7326711A4A00F09016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7226711A4A00F09016 /* SceneDelegate.swift */; };
 		4FC80B7526711A4A00F09016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC80B7426711A4A00F09016 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		4F9BF63026722EB00071E5B6 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		4F9BF63226724BE90071E5B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4FC80B6D26711A4A00F09016 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC80B7026711A4A00F09016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC80B7226711A4A00F09016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				4FC80B7E26711A5900F09016 /* LaunchScreen.storyboard */,
 				4F9BF63026722EB00071E5B6 /* EditViewController.swift */,
 				4FC80B8126711A5900F09016 /* Info.plist */,
+				4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */,
 				4FC80B7926711A4A00F09016 /* FirebaseApp.xcdatamodeld */,
 			);
 			path = FirebaseApp;
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC80B8026711A5900F09016 /* LaunchScreen.storyboard in Resources */,
+				4F9BF63526725B470071E5B6 /* GoogleService-Info.plist in Resources */,
 				4FC80B7D26711A5900F09016 /* Assets.xcassets in Resources */,
 				4FC80B7826711A4A00F09016 /* Main.storyboard in Resources */,
 			);
