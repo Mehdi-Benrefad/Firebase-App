@@ -23,6 +23,9 @@ pod 'Firebase/Database'<br>
 pod 'Firebase/Auth'<br>
 pod 'Firebase/Core'<br>
   => save the file<br>
-  => tap "pod install" on the Command Line
+  => tap "pod install" on the Command Line <br>
+  => check if the firebase importation exist on the app delegate <br>
+  => check if this function (FirebaseApp.configure()) exist on the application method
 </p>
-# Firebase-App
+
+
