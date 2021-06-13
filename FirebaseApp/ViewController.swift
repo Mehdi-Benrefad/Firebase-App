@@ -62,6 +62,15 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         cell.textLabel?.text=personforRow.name + " " + personforRow.lname
         return cell
       }
+    
+    
+    //supprimer une personne
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+          if editingStyle == .delete {
+              let personItems = items[indexPath.row]
+              personItems.ref?.removeValue()
+          }
+      }
       
 }
 
