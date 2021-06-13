@@ -63,6 +63,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         let personforRow = items[indexPath.row]
         
         cell.textLabel?.text=personforRow.name + " " + personforRow.lname
+        cell.detailTextLabel?.text=personforRow.age
         return cell
       }
     
@@ -83,6 +84,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //on recupere l'identifiant de la cellule selectionnee
         personId = items[indexPath.row].key
+        //activer le segue qui a pour depart [ViewController] et destination [edit]
         performSegue(withIdentifier: "SegueToEdit", sender: nil)
     }
     
