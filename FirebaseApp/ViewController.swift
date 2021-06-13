@@ -7,14 +7,61 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
+    @IBOutlet weak var tableView: UITableView!
+    
+    //on cree une reference vers la base de donnee
+    let ref = Database.database().reference(withPath:"people")
+    
+    //on recupere nos objets
+    var items : [Person] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // on recupere une copie des donnees dans la base de donnees via snapshot
+            
+            //on effectue un test sur la console pour tester si il ya une erreur
+            ref.observe(.value, with: { snapshot in
+                       print(snapshot.value as Any )
+            })
+            
+            //on recuoere les personnes stoques dans la base de donnee
+            ref.observe(.value, with: { snapshot in
+                //c'est le tableau temporaie qu'on va remplir
+                var newPerson: [Person] = []
+                
+                for child in snapshot.children{
+                    if let snapshot = child as? DataSnapshot,
+                        let persons = Person(snapshot: snapshot){
+                            newPerson.append(persons)
+                        }
+                }
+                
+            //on affecte le resultat de la requette dans notre tableau
+            self.items = newPerson
+            self.tableView.reloadData()
+            })
+            
     }
 
 
+    
+      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        items.count
+      }
+      
+      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell" , for: indexPath)
+        
+        let personforRow = items[indexPath.row]
+        
+        cell.textLabel?.text=personforRow.name + " " + personforRow.lname
+        return cell
+      }
+      
 }
 
