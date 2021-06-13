@@ -30,8 +30,8 @@ pod 'Firebase/Core'<br>
 
 <hr>
 
-# 3- Authentication
-  <p> Goto fire base:"<br>
+# 4- Authentication
+  <p> Go to Firebase:"<br>
   =>Activate autentication mode with email and password<br>
   => Add a user by adding it's username and password<br>
 </p>
