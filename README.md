@@ -28,4 +28,12 @@ pod 'Firebase/Core'<br>
   => check if this function (FirebaseApp.configure()) exist on the application method
 </p>
 
+<hr>
+
+# 3- Authentication
+  <p> Goto fire base:"<br>
+  =>Activate autentication mode with email and password<br>
+  => Add a user by adding it's username and password<br>
+</p>
+
 
