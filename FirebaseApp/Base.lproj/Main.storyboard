@@ -204,6 +204,7 @@
                                 </state>
                                 <connections>
                                     <action selector="UpdatePerson:" destination="mu1-py-Itl" eventType="touchUpInside" id="pij-yd-HuB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bUM-AF-McX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-Wh-bDa">
@@ -232,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhG-mb-Rze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="854"/>
+            <point key="canvasLocation" x="1037.68115942029" y="853.53260869565224"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BdT-WU-ovK">
@@ -254,6 +255,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G9p-c6-iPi"/>
+        <segue reference="Y5a-0X-cpD"/>
+        <segue reference="bUM-AF-McX"/>
     </inferredMetricsTieBreakers>
 </document>

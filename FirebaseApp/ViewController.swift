@@ -83,7 +83,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //on recupere l'identifiant de la cellule selectionnee
         personId = items[indexPath.row].key
-        performSegue(withIdentifier: "toEdit", sender: nil)
+        performSegue(withIdentifier: "SegueToEdit", sender: nil)
     }
     
     //on passe l'identifiant au controlleur de modification
