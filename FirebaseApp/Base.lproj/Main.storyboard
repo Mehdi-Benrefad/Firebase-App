@@ -134,6 +134,9 @@
                                 <state key="normal" title="ADD">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPerson:" destination="h3X-wJ-rub" eventType="touchUpInside" id="cDR-g7-cKu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nM-hS-ePm">
                                 <rect key="frame" x="91" y="43" width="234" height="91"/>
@@ -159,6 +162,11 @@
                         <viewLayoutGuide key="safeArea" id="HRC-4O-L5E"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Person" id="qil-GH-hop"/>
+                    <connections>
+                        <outlet property="age" destination="ASG-v6-YiI" id="Sjd-oR-871"/>
+                        <outlet property="fname" destination="Ron-nc-zuI" id="QF2-4v-WUC"/>
+                        <outlet property="lname" destination="P7M-QL-TL7" id="vyZ-G2-QEo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ru8-Z5-A1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
