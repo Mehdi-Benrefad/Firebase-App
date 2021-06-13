@@ -19,6 +19,9 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     //on recupere nos objets
     var items : [Person] = []
     
+    //idetifiant de la personne a modifier
+    var personId = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,9 +71,27 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
           if editingStyle == .delete {
               let personItems = items[indexPath.row]
-              personItems.ref?.removeValue()
+            
+            //supprimer un objet de firebase a partir de sa reference
+            personItems.ref?.removeValue()
           }
       }
       
+    
+    //Modifier une personne [preparation]
+    //fonction qui se declanche des le clic sur une cellule
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //on recupere l'identifiant de la cellule selectionnee
+        personId = items[indexPath.row].key
+        performSegue(withIdentifier: "toEdit", sender: nil)
+    }
+    
+    //on passe l'identifiant au controlleur de modification
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SegueToEdit"{
+            let editViewController = segue.destination as! EditViewController
+            editViewController.personId = personId
+        }
+    }
 }
 

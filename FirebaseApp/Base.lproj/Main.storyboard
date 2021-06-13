@@ -106,6 +106,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="CiH-zd-mnV" id="1ox-Ya-FDe"/>
+                        <segue destination="mu1-py-Itl" kind="show" identifier="SegueToEdit" id="Y5a-0X-cpD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -176,7 +177,7 @@
         <!--Edit View Controller-->
         <scene sceneID="hMj-6A-Zrj">
             <objects>
-                <viewController id="mu1-py-Itl" customClass="EditViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mu1-py-Itl" customClass="EditViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16E-I0-3TB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,6 +202,9 @@
                                 <state key="normal" title="UPDATE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="UpdatePerson:" destination="mu1-py-Itl" eventType="touchUpInside" id="pij-yd-HuB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-Wh-bDa">
                                 <rect key="frame" x="90" y="46" width="234" height="91"/>
@@ -219,10 +223,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rAc-u1-V8B"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GHX-Md-OLO"/>
+                    <connections>
+                        <outlet property="age" destination="uMq-5G-8dx" id="twj-VW-9nQ"/>
+                        <outlet property="fname" destination="bQO-rE-0bP" id="pyA-1w-c6D"/>
+                        <outlet property="lname" destination="QZn-Hz-afu" id="5C8-Iw-2vj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhG-mb-Rze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039" y="789"/>
+            <point key="canvasLocation" x="1038" y="854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BdT-WU-ovK">
@@ -244,7 +254,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w3d-CR-EZE"/>
         <segue reference="G9p-c6-iPi"/>
     </inferredMetricsTieBreakers>
 </document>
