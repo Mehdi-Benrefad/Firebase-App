@@ -9,18 +9,26 @@
 import UIKit
 import Firebase
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
 
+    //Image Picker
+    let imagePicker = UIImagePickerController()
+    
     let ref = Database.database().reference(withPath: "people")
     var items :[Person] = []
     
     @IBOutlet weak var fname: UITextField!
     @IBOutlet weak var lname: UITextField!
     @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var imgg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //definir le viewController en tant que delegate de l'image picker
+        imagePicker.delegate = self
+        //definir la source de l'image
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = false
     }
     
     @IBAction func addPerson(_ sender: UIButton) {
@@ -29,14 +37,17 @@ class AddViewController: UIViewController {
         addPersonRef.setValue(addPerson.toAnyObject())
     }
     
-    /*
-    // MARK: - Navigation
+   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+       //on verifie si l'utilisateur a selectionne une image correctement
+        if let userPickerImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                   imgg.image = userPickerImage
+                  
+       }
+        imagePicker.dismiss(animated: true, completion: nil)
+   }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func inageBTN(_ sender: Any) {
+        imagePicker.modalPresentationStyle = .fullScreen
+        present(imagePicker,animated: true,completion: nil)
     }
-    */
-
 }

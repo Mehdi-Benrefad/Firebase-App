@@ -62,6 +62,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F67691D2676BC5600150500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F9BF636267276EB0071E5B6 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F67691E2676BC6700150500 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4FC80B7E26711A5900F09016 /* LaunchScreen.storyboard */,
+				4FC80B7626711A4A00F09016 /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4F67691F2676BC7700150500 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FC80B7426711A4A00F09016 /* ViewController.swift */,
+				4F9BF63226724BE90071E5B6 /* LoginViewController.swift */,
+				4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */,
+				4F9BF63026722EB00071E5B6 /* EditViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		4FC80B6426711A4A00F09016 = {
 			isa = PBXGroup;
 			children = (
@@ -85,14 +113,10 @@
 			children = (
 				4FC80B7026711A4A00F09016 /* AppDelegate.swift */,
 				4FC80B7226711A4A00F09016 /* SceneDelegate.swift */,
-				4F9BF63226724BE90071E5B6 /* LoginViewController.swift */,
-				4F9BF636267276EB0071E5B6 /* Person.swift */,
-				4FC80B7426711A4A00F09016 /* ViewController.swift */,
-				4F9BF62E26722B3C0071E5B6 /* AddViewController.swift */,
-				4FC80B7626711A4A00F09016 /* Main.storyboard */,
+				4F67691D2676BC5600150500 /* Model */,
+				4F67691E2676BC6700150500 /* view */,
+				4F67691F2676BC7700150500 /* controller */,
 				4FC80B7C26711A5900F09016 /* Assets.xcassets */,
-				4FC80B7E26711A5900F09016 /* LaunchScreen.storyboard */,
-				4F9BF63026722EB00071E5B6 /* EditViewController.swift */,
 				4FC80B8126711A5900F09016 /* Info.plist */,
 				4F9BF63426725B470071E5B6 /* GoogleService-Info.plist */,
 				4FC80B7926711A4A00F09016 /* FirebaseApp.xcdatamodeld */,
