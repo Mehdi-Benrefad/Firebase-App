@@ -24,6 +24,11 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //on teste si l'utilisateur est authentifie
+       // if Auth.auth().currentUser != nil {
+       // } else {
+         //   self.performSegue(withIdentifier: "backToLogin", sender: nil)
+        //}
         
         // on recupere une copie des donnees dans la base de donnees via snapshot
             
@@ -94,6 +99,19 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
             let editViewController = segue.destination as! EditViewController
             editViewController.personId = personId
         }
+    }
+    
+    @IBAction func LogOut(_ sender: UIBarButtonItem) {
+
+           let firebaseAuth = Auth.auth()
+           do {
+             try firebaseAuth.signOut()
+            //self.performSegue(withIdentifier: "toLoginSegue", sender: nil)
+            self.dismiss(animated: true, completion: nil)
+        
+           } catch let signOutError as NSError {
+             print ("Error signing out: %@", signOutError)
+           }
     }
 }
 

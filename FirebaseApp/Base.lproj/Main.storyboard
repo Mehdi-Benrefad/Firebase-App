@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="XM5-uK-4t4">
             <objects>
-                <viewController id="gxu-bI-aSs" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="gxu-bI-aSs" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9k-hb-BWz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jTa-M5-kSI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Q3-fX-iEZ"/>
                     <connections>
                         <outlet property="login" destination="stu-8h-NJM" id="yV7-sU-ShP"/>
                         <outlet property="password" destination="XrQ-tM-xhr" id="O6w-Ya-rbV"/>
@@ -77,11 +78,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CiH-zd-mnV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" textLabel="w5h-WU-eOw" detailTextLabel="xYx-P7-trR" style="IBUITableViewCellStyleSubtitle" id="Dfh-lg-Gm6">
@@ -129,6 +130,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="THC-f9-KPN">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="AqW-3k-3GQ">
+                            <connections>
+                                <action selector="LogOut:" destination="BYZ-38-t0r" id="Ez3-k4-R08"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="adS-Ap-Rcx">
                             <connections>
                                 <segue destination="h3X-wJ-rub" kind="show" id="w3d-CR-EZE"/>
@@ -149,7 +155,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="h3X-wJ-rub" customClass="AddViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWe-SA-bTk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASG-v6-YiI">
@@ -225,7 +231,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="mu1-py-Itl" customClass="EditViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16E-I0-3TB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-rE-0bP">
@@ -305,6 +311,6 @@
         <image name="mehdi" width="283" height="283"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G9p-c6-iPi"/>
+        <segue reference="1sc-PQ-WzV"/>
     </inferredMetricsTieBreakers>
 </document>

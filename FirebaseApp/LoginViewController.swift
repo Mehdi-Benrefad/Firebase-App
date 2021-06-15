@@ -18,7 +18,20 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // On verifie si l'utilisateur exixte et on active le segue vers la liste.
+        /*Auth.auth().addStateDidChangeListener() {
+            auth ,user in
+            if user != nil {
+                self.performSegue(withIdentifier: "LoginToList", sender: nil)
+            }
+        }*/
+        if Auth.auth().currentUser != nil {
+                 self.performSegue(withIdentifier: "LoginToList", sender: nil)
+               } else {
+                 // No user is signed in.
+                 // ...
+               }
+        //Dans la base de donnees firebase => Rules [".read":"auth!=null"] pour acceder au donnees un utilisateur doit etre authetifie
     }
     
 
