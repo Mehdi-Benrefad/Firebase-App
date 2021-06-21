@@ -11,7 +11,7 @@
  <hr>
  
 # 2- attach the firebase Project to the IOS Application
-  <p> chose IOS=> add this bundle id to the farbase project "Mehdi-Benrefad.FirebaseApp" => download the "GoogleService-Info.plist" file and add it on the project (delete the existing one on the xcode project) </p>
+  <p> choose IOS=> add this bundle id to the firebase project "Mehdi-Benrefad.FirebaseApp" => download the "GoogleService-Info.plist" file and add it on the project (delete the existing one on the xcode project) </p>
   
   <hr>
   
